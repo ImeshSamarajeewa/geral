@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <input type="search" name="search" placeholder="search keywords">
+    <h1>Contact us</h1>
+
+    <form method="get">
+        <fieldset>
+            <legend>Personal info</legend>
+        
+        <p>
+            <label for="fname">First Name:</label>
+            <input type="text" maxlength="15" name="fname"required> 
+        </p>
+        <p>
+            <label for="lname">Last Name:</label> &nbsp;<input type="text" maxlength="20" name="lname">
+        </p>
+        
+    
+        <p>
+            Gender: <input type="radio" name="gender" id="gender" value="Male">Male
+            
+            <input type="radio" name="gender" value="Female" id="gender">Female
+
+            <input type="radio" name="gender" value="NA" id="gender">Prefer not to mention  
+
+        </p>
+        <label for="dob">Date of birth</label><input type="date" id="dob" name="dob">
+    </fieldset>
+    <fieldset>
+        <legend>contact info</legend>
+         Email:<input type="email">
+         <p>
+             Address:
+            <textarea name="address" id="address"></textarea>
+         </p>
+         <p>
+            <select name="country" id="country" size="3">
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="India">India</option>
+            <option value="china">China</option>
+            <option value="Russia">Russia</option>
+            <option value="USA">USA</option>
+            </select>
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>other</legend>
+        <p>
+            <lable for="pin">PIN:</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" maxlength="3" name="pin">
+        </p>
+        <p>
+           <label for="Preferences"> Preferences:</label> <input type="checkbox">Fantasy
+            <input type="checkbox">Comedy
+            <input type="checkbox">Action
+            <input type="checkbox">Thriiller
+        </p>
+
+        
+        <p>
+            <label for="cv">CV:</label> <input type="file" > 
+        </p>
+        <p>
+            <input type="button" value="send copy" name="sendCopy">
+            <input type="submit">
+            <input type="reset">
+        </p>
+        <video src="./people.mp4" poster="./image.jfif" width="500" height="350" preload="auto" controls loop></video>
+        <audio src="./audio.mp3" controls autoplay></audio>
+    </fieldset>
+
+       
+    </form>
+  
+</body>
+</html>

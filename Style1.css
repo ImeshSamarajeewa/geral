@@ -1,0 +1,7 @@
+@media screen and (width:600px){
+    body{color:red; font-size: 30pt;}
+}
+
+@media (orientation:landscape){
+    body {color: green;}
+}
